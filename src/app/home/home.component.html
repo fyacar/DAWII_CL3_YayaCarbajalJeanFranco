@@ -1,13 +1,11 @@
 <mat-toolbar>
-    <span>CL3 Yaya</span>   
+    <span (click)="irHome()">CL3 Yaya</span>   
     &nbsp;&nbsp;
     <button mat-button (click)="irPregunta2()">Pregunta2</button>
     &nbsp;&nbsp;
-    <button mat-button >Pregunta3</button>  
+    <button mat-button (click)="irPregunta3()" >Pregunta3</button>  
     <span class="example-spacer"></span>
   </mat-toolbar>
-    
-  
   <router-outlet></router-outlet>
  
 

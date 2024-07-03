@@ -19,6 +19,12 @@ export class HomeComponent {
   irPregunta2():void{
     this.router.navigate(["pregunta2"], {relativeTo: this.route})
   }
+  irPregunta3():void{
+    this.router.navigate(["pregunta3"], {relativeTo: this.route})
+  }
+  irHome():void{
+    this.router.navigate(["home"])
+  }
 
 
 }

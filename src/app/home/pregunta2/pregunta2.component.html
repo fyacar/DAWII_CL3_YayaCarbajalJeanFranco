@@ -1,8 +1,9 @@
 <h1>Lista de Lugares de tipo Planet</h1>
+<div class="contenedor">
 <table mat-table [dataSource]="locations" class="mat-elevation-z8">
 
     <!--- ['id', 'name', 'type', 'dimension',"residents","url","created"]-->
-  
+
     <!-- Position Column -->
     <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef> ID </th>
@@ -43,3 +44,4 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
+</div>

@@ -12,6 +12,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrl: './pregunta2.component.css'
 })
 export class Pregunta2Component {
+
   displayedColumns: string[] = ['id', 'name', 'type', 'dimension',"residents","url","created"];
   locations: Location[] = []
 

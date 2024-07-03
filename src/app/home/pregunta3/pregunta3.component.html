@@ -1,0 +1,34 @@
+<h1>Lista de Tareas con ids comprendidos del 25 al 90 y completed = true</h1>
+<table mat-table [dataSource]="todos" class="mat-elevation-z8">
+
+    <!---  /*    userId: Number;
+    id: number;
+    title:string;
+    completed:boolean;*/-->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="userId">
+      <th mat-header-cell *matHeaderCellDef> userId </th>
+      <td mat-cell *matCellDef="let element"> {{element.userId}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> id </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+    <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef> title </th>
+        <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+      </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="completed">
+      <th mat-header-cell *matHeaderCellDef> completed </th>
+      <td mat-cell *matCellDef="let element"> {{element.completed}} </td>
+    </ng-container>
+  
+   
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
